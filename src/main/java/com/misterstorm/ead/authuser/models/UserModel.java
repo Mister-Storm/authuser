@@ -108,6 +108,23 @@ public class UserModel implements Serializable {
     public LocalDateTime getLastUpdateDate() {
         return lastUpdateDate;
     }
+
+    public void setUserStatus(UserStatus userStatus) {
+        this.userStatus = userStatus;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
+    }
+
+    public void setCreationDate(LocalDateTime creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public void setLastUpdateDate(LocalDateTime lastUpdateDate) {
+        this.lastUpdateDate = lastUpdateDate;
+    }
+
     public static class Builder {
         private UserModel userModel;
 
